@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* Brand tokens */
+:root {
+  /* sand / volcanic vibe */
+  --sand: 246 241 232;
+  --paper: 255 255 255;
+  --latte: 234 224 210;
+
+  --ink: 19 18 16;
+  --muted: 86 79 70;
+  --line: 34 31 26;
+
+  --accent: 106 74 50;
+  --accent2: 38 87 126;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Text selection */
+::selection {
+  background: rgba(38, 87, 126, 0.18);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Container helper */
+.container-pad {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Optional: nicer image rendering */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Optional smoother transitions site-wide */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
