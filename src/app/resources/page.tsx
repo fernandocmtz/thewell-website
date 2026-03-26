@@ -7,7 +7,7 @@ export default function ResourcesPage() {
   return (
     <main className="relative min-h-screen bg-[rgb(var(--sand))] overflow-hidden">
 
-      {/* EXACT SAME BACKGROUND AS PSALM16 */}
+      {/* BACKGROUND */}
       <img
         src="/images/thewell-banner.jpg"
         alt="The Well Bible Church"
@@ -35,14 +35,14 @@ export default function ResourcesPage() {
           Bible study notes and teaching resources.
         </p>
 
-        {/* Card (MISMO ESTILO QUE LOS DEMÁS) */}
+        {/* CARD */}
         <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-lg p-8">
 
           <h2 className="text-xl font-semibold mb-6">
             Adult Classes
           </h2>
 
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-6">
 
             <Link
               href="/resources/adult-classes/psalm119"
@@ -56,6 +56,14 @@ export default function ResourcesPage() {
               className="bg-[#2F3E34] text-white px-6 py-3 rounded-lg hover:scale-105 transition"
             >
               Psalm 16
+            </Link>
+
+            {/* NEW RUTH BUTTON */}
+            <Link
+              href="/resources/adult-classes/ruth"
+              className="bg-[#2F3E34] text-white px-6 py-3 rounded-lg hover:scale-105 transition"
+            >
+              Ruth
             </Link>
 
           </div>
