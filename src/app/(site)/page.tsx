@@ -45,8 +45,7 @@ export default function HomePage() {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg text-white/90">
-                We are a church committed to teaching Scripture clearly,
-                verse-by-verse, and walking together as a family of believers.
+                We are a church devoted to faithfully teaching God’s Word, verse by verse, equipping people to become and grow as disciples for the glory of God.
               </p>
 
 
@@ -185,7 +184,7 @@ export default function HomePage() {
                         </div>
 
                         <div className="text-lg font-bold text-gray-900">
-                          Tithes & Offers
+                          Tithes & Offerings
                         </div>
 
                         <p className="text-sm text-gray-600 mt-2">
