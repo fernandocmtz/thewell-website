@@ -47,54 +47,48 @@ export default function HomePage() {
                 We are a church devoted to faithfully teaching God’s Word, verse by verse, equipping people to become and grow as disciples for the glory of God.
               </p>
 
-              {/* BUTTONS */}
-              <div className="mt-8 flex flex-wrap gap-4">
+              {/* BUTTONS (CONSISTENT) */}
+              <div className="flex flex-wrap items-center gap-6 mt-8">
 
+                {/* PRIMARY */}
                 <Link
                   href="/resources"
-                  className="rounded-xl bg-[#8B5A3C] px-6 py-3 text-white font-semibold hover:bg-[#744a32] transition"
+                  className="bg-[#9c6b4f] text-white px-7 py-3.5 rounded-2xl font-medium shadow-md hover:scale-[1.03] hover:shadow-xl transition-all duration-300"
                 >
                   Weekly Resources
                 </Link>
 
-                <a
-                  href="https://maps.app.goo.gl/4Ur1ZEJmcehZmVPY7"
-                  target="_blank"
-                  className="rounded-xl border border-white/30 px-6 py-3 text-white backdrop-blur hover:bg-white/10"
+                {/* SECONDARY */}
+                <Link
+                  href="/location"
+                  className="border border-white/30 text-white px-7 py-3.5 rounded-2xl font-medium backdrop-blur-md bg-white/10 hover:bg-white/20 transition-all duration-300"
                 >
                   Get Directions
-                </a>
+                </Link>
 
+                {/* SECONDARY (IGUAL) */}
                 <Link
                   href="/events"
-                  className="rounded-xl border border-white/30 px-6 py-3 text-white backdrop-blur hover:bg-white/10"
+                  className="border border-white/30 text-white px-7 py-3.5 rounded-2xl font-medium backdrop-blur-md bg-white/10 hover:bg-white/20 transition-all duration-300"
                 >
                   Upcoming Events
                 </Link>
 
               </div>
 
-              {/* SERVICE CARDS */}
-              <div className="mt-12 grid gap-4 sm:grid-cols-2">
+              {/* SERVICE INFO (CLEAN SIN LÍNEA) */}
+              <div className="mt-14 flex flex-wrap items-center gap-8 text-white/60 text-sm tracking-wide">
 
-                <div className="rounded-2xl border border-white/20 bg-white/10 p-5 backdrop-blur">
-                  <div className="text-white font-semibold">
-                    Sunday Service
-                  </div>
-
-                  <div className="text-white/80 text-sm">
-                    11:00 AM
-                  </div>
+                <div>
+                  <span className="text-white font-medium">Sunday Service</span>
+                  <span className="mx-2 text-white/30">•</span>
+                  11:00 AM
                 </div>
 
-                <div className="rounded-2xl border border-white/20 bg-white/10 p-5 backdrop-blur">
-                  <div className="text-white font-semibold">
-                    Small Groups
-                  </div>
-
-                  <div className="text-white/80 text-sm">
-                    Weekly gatherings
-                  </div>
+                <div>
+                  <span className="text-white font-medium">Small Groups</span>
+                  <span className="mx-2 text-white/30">•</span>
+                  Weekly gatherings
                 </div>
 
               </div>
