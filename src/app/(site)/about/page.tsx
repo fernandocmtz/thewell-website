@@ -15,11 +15,11 @@ export default function AboutPage() {
       <section className="bg-[rgb(var(--sand))] py-24 relative">
 
         <a
-          href="/"
-          className="absolute left-8 top-10 flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-black transition"
+        href="/"
+        className="absolute left-1/2 -translate-x-[640px] top-10 flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-black transition z-20"
         >
-          ← Back to Home
-        </a>
+        ← Back to Home
+      </a>
 
         <div className="mx-auto max-w-7xl px-6 text-center">
 
@@ -45,6 +45,7 @@ export default function AboutPage() {
 
         <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-16 items-center">
 
+          {/* TEXT */}
           <div>
 
             <h2 className="text-4xl font-bold text-gray-900">
@@ -52,26 +53,23 @@ export default function AboutPage() {
             </h2>
 
             <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-              The Well began as a small Bible study among friends called
-              <strong> Welldiggers</strong>. What started as a small gathering
-              eventually grew into a weekly Bible study hosted at a local
-              coffee shop every Thursday.
+              The Well began as a small Bible study among friends, later named
+              <strong> Well Digger Bible Book Club</strong>. What started as a simple gathering quickly grew into a weekly study meeting every Thursday at Semilla Coffee Lab.
             </p>
 
             <p className="mt-4 text-lg text-gray-600 leading-relaxed">
-              As the group continued to grow, the study expanded into
-              multiple gatherings and eventually developed into what
-              is now <strong>The Well Bible Church</strong>.
+              As the group continued to grow, the study expanded into two weekly gatherings to accommodate those attending.
             </p>
 
             <p className="mt-4 text-lg text-gray-600 leading-relaxed">
-              Our desire is to study Scripture verse-by-verse,
-              worship God together, and grow as a family of believers.
+              Over time, that same community of believers developed into what is now
+              <strong> The Well Bible Church</strong>—a church committed to the faithful, verse-by-verse teaching of Scripture and to growing together in Christ.
             </p>
 
             <p className="mt-4 text-lg text-gray-600 leading-relaxed">
-              The church is led by <strong>Pastor David Hermosillo</strong>
-              and his wife <strong>Ana Hermosillo</strong>.
+              The Well Bible Church is led by a team of elders and is pastored by
+              <strong> David Hermosillo</strong>, alongside his wife
+              <strong> Ana</strong>, who faithfully serves and supports the Children’s and Women’s Ministries.
             </p>
 
           </div>
@@ -131,41 +129,18 @@ export default function AboutPage() {
 
         </div>
 
-
-        {/* COLLAGE */}
         <div className="mt-16 mx-auto max-w-6xl px-6 grid md:grid-cols-3 gap-6">
 
           <div className="relative h-[260px] rounded-2xl overflow-hidden shadow-lg rotate-[-2deg]">
-
-            <Image
-              src="/images/kids/kids1.0.png"
-              alt="Kids Ministry"
-              fill
-              className="object-cover"
-            />
-
+            <Image src="/images/kids/kids1.0.png" alt="Kids Ministry" fill className="object-cover" />
           </div>
 
           <div className="relative h-[260px] rounded-2xl overflow-hidden shadow-lg rotate-[2deg]">
-
-            <Image
-              src="/images/kids/kids2.0.png"
-              alt="Kids Ministry"
-              fill
-              className="object-cover"
-            />
-
+            <Image src="/images/kids/kids2.0.png" alt="Kids Ministry" fill className="object-cover" />
           </div>
 
           <div className="relative h-[260px] rounded-2xl overflow-hidden shadow-lg rotate-[-1deg]">
-
-            <Image
-              src="/images/kids/kids3.0.png"
-              alt="Kids Ministry"
-              fill
-              className="object-cover"
-            />
-
+            <Image src="/images/kids/kids3.0.png" alt="Kids Ministry" fill className="object-cover" />
           </div>
 
         </div>
@@ -174,10 +149,7 @@ export default function AboutPage() {
 
 
       {/* SMALL GROUPS */}
-      <section
-        id="small-groups"
-        className="bg-white py-24"
-      >
+      <section id="small-groups" className="bg-white py-24">
 
         <div className="mx-auto max-w-7xl px-6">
 
@@ -190,82 +162,37 @@ export default function AboutPage() {
             happen throughout the week.
           </p>
 
-
           <div className="mt-14 grid gap-8 md:grid-cols-2">
 
-            {/* FAMILIES */}
             <div
               onClick={() => setSelectedImage("/images/small-groups/families.png")}
               className="cursor-pointer rounded-2xl overflow-hidden bg-white shadow hover:shadow-xl transition"
             >
-
               <div className="relative h-[420px]">
-
-                <Image
-                  src="/images/small-groups/families.png"
-                  alt="Families Small Group"
-                  fill
-                  className="object-cover"
-                />
-
+                <Image src="/images/small-groups/families.png" alt="Families Small Group" fill className="object-cover" />
               </div>
 
               <div className="p-6">
-
-                <h3 className="font-bold text-xl text-gray-900">
-                  Families Small Group
-                </h3>
-
-                <p className="text-gray-600 mt-2">
-                  Thursday • 7:30 PM
-                </p>
-
-                <p className="text-gray-500 text-sm">
-                  McAllen, TX
-                </p>
-
+                <h3 className="font-bold text-xl text-gray-900">Families Small Group</h3>
+                <p className="text-gray-600 mt-2">Thursday • 7:30 PM</p>
+                <p className="text-gray-500 text-sm">McAllen, TX</p>
               </div>
-
             </div>
 
-
-            {/* MEN WOMEN */}
             <div
               onClick={() => setSelectedImage("/images/small-groups/menswomens.png")}
               className="cursor-pointer rounded-2xl overflow-hidden bg-white shadow hover:shadow-xl transition"
             >
-
               <div className="relative h-[420px]">
-
-                <Image
-                  src="/images/small-groups/menswomens.png"
-                  alt="Men and Women Small Groups"
-                  fill
-                  className="object-cover"
-                />
-
+                <Image src="/images/small-groups/menswomens.png" alt="Men and Women Small Groups" fill className="object-cover" />
               </div>
 
               <div className="p-6">
-
-                <h3 className="font-bold text-xl text-gray-900">
-                  Men & Women Groups
-                </h3>
-
-                <p className="text-gray-600 mt-2">
-                  Tuesday • 6:30 PM
-                </p>
-
-                <p className="text-gray-600">
-                  Saturday • 11:30 AM
-                </p>
-
-                <p className="text-gray-500 text-sm">
-                  McAllen & Edinburg
-                </p>
-
+                <h3 className="font-bold text-xl text-gray-900">Men & Women Groups</h3>
+                <p className="text-gray-600 mt-2">Tuesday • 6:30 PM</p>
+                <p className="text-gray-600">Saturday • 11:30 AM</p>
+                <p className="text-gray-500 text-sm">McAllen & Edinburg</p>
               </div>
-
             </div>
 
           </div>
@@ -276,10 +203,7 @@ export default function AboutPage() {
 
 
       {/* LOCATION */}
-      <section
-        id="location"
-        className="bg-[rgb(var(--sand))] py-24"
-      >
+      <section id="location" className="bg-[rgb(var(--sand))] py-24">
 
         <div className="mx-auto max-w-5xl px-6 text-center">
 
@@ -306,20 +230,16 @@ export default function AboutPage() {
 
       {/* IMAGE MODAL */}
       {selectedImage && (
-
         <div
           onClick={() => setSelectedImage(null)}
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
         >
-
           <img
             src={selectedImage}
             alt="Small Group"
             className="max-h-[92vh] max-w-[92vw] rounded-xl shadow-2xl"
           />
-
         </div>
-
       )}
 
     </div>
