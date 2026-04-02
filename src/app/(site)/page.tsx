@@ -25,7 +25,7 @@ export default function HomePage() {
         {/* HERO CONTENT */}
         <div className="relative mx-auto max-w-7xl px-6 py-24">
 
-          <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[1fr_400px] gap-10 items-center">
 
             {/* LEFT SIDE */}
             <div>
