@@ -96,7 +96,7 @@ export default function HomePage() {
             </div>
 
             {/* RIGHT PANEL */}
-            <div className="ml-auto max-w-[420px] lg:mr-[-160px] xl:mr-[-200px] pr-2">
+            <div className="mt-10 md:mt-10 lg:mt-0 ml-auto max-w-[420px] pr-2 lg:mr-[-160px] xl:mr-[-200px]">
 
               <div className="rounded-[32px] border border-white/20 bg-white/20 p-8 backdrop-blur-xl shadow-xl">
 
