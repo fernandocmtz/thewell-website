@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import BackButton from "@/components/BackButton";
 
 export default function ResourcesPage() {
   return (
@@ -44,13 +43,15 @@ export default function ResourcesPage() {
 
           <div className="flex flex-wrap gap-6">
 
+            {/* RUTH (FIRST) */}
             <Link
-              href="/resources/adult-classes/psalm119"
+              href="/resources/adult-classes/ruth"
               className="bg-[#2F3E34] text-white px-6 py-3 rounded-lg hover:scale-105 transition"
             >
-              Psalm 119
+              Ruth
             </Link>
 
+            {/* PSALM 16 */}
             <Link
               href="/resources/adult-classes/psalm16"
               className="bg-[#2F3E34] text-white px-6 py-3 rounded-lg hover:scale-105 transition"
@@ -58,12 +59,12 @@ export default function ResourcesPage() {
               Psalm 16
             </Link>
 
-            {/* NEW RUTH BUTTON */}
+            {/* PSALM 119 */}
             <Link
-              href="/resources/adult-classes/ruth"
+              href="/resources/adult-classes/psalm119"
               className="bg-[#2F3E34] text-white px-6 py-3 rounded-lg hover:scale-105 transition"
             >
-              Ruth
+              Psalm 119
             </Link>
 
           </div>
