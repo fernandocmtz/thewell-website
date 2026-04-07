@@ -2,13 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { NAV, SOCIAL } from "../data/site";
-
-function cx(...classes: Array<string | false | undefined>) {
-  return classes.filter(Boolean).join(" ");
-}
 
 function Icon({ name }: { name: "youtube" | "instagram" | "chev" }) {
   switch (name) {
@@ -41,7 +36,6 @@ function Icon({ name }: { name: "youtube" | "instagram" | "chev" }) {
 
 export default function Navbar() {
 
-  const pathname = usePathname();
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [closeTimer, setCloseTimer] = useState<NodeJS.Timeout | null>(null);
 
@@ -197,6 +191,17 @@ export default function Navbar() {
         </nav>
 
       </div>
+
+{/* MOBILE YOUTUBE CTA */}
+<div className="md:hidden absolute top-12 right-4 z-50">
+  <a
+    href={SOCIAL.youtubeSearch}
+    target="_blank"
+    className="inline-flex items-center gap-2 bg-[#C4302B] hover:bg-[#a72823] text-white px-4 py-1.5 rounded-full text-xs font-medium shadow-lg transition"
+  >
+    ▶ Watch on YouTube
+  </a>
+</div>
 
     </header>
   );

@@ -9,4 +9,9 @@ export const RUTH_SERIES = [
     youtube: "https://www.youtube.com/watch?v=hIJi1UMx8io",
     pdf: "/resources/THEWELL_RUTH2.pdf",
   },
+  {
+    title: "Ruth 3 — At His Feet",
+    youtube: "https://www.youtube.com/live/DM3OjHaR8I8?si=-aa9gBCaqx3Ja8Yf",
+    pdf: "/resources/THEWELL_RUTH3.pdf"
+  }
 ];

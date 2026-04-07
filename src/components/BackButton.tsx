@@ -10,10 +10,19 @@ export default function BackButton({
   label: string;
 }) {
   return (
-    <div className="mb-8">
+    <div className="mb-6">
       <Link
         href={href}
-        className="text-sm text-black/60 hover:text-black transition flex items-center gap-2 tracking-tight"
+        className="
+          inline-flex items-center gap-2
+          text-xs sm:text-sm
+          px-3 py-1.5
+          rounded-full
+          bg-black/5 hover:bg-black/10
+          text-black/70 hover:text-black
+          transition-all duration-200
+          tracking-tight
+        "
       >
         ← {label}
       </Link>

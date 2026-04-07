@@ -15,11 +15,22 @@ export default function AboutPage() {
       <section className="bg-[rgb(var(--sand))] py-24 relative">
 
         <a
-        href="/"
-        className="absolute left-1/2 -translate-x-[640px] top-10 flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-black transition z-20"
-        >
-        ← Back to Home
-      </a>
+  href="/"
+  className="
+    absolute top-6 left-4
+    sm:left-6
+    lg:left-1/2 lg:-translate-x-[640px]
+    flex items-center gap-2
+    text-xs sm:text-sm
+    px-3 py-1.5
+    rounded-full
+    bg-black/5 hover:bg-black/10
+    text-black/70 hover:text-black
+    transition z-20
+  "
+>
+  ← Back to Home
+</a>
 
         <div className="mx-auto max-w-7xl px-6 text-center">
 
