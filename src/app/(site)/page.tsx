@@ -1,3 +1,4 @@
+import { SOCIAL } from "@/data/site";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -60,9 +61,9 @@ export default function HomePage() {
 
                 {/* SECONDARY */}
                 <Link
-                  href="/location"
+                  href={SOCIAL.location}
                   className="border border-white/30 text-white px-7 py-3.5 rounded-2xl font-medium backdrop-blur-md bg-white/10 hover:bg-white/20 transition-all duration-300"
-                >
+                  >
                   Get Directions
                 </Link>
 

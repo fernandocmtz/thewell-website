@@ -13,5 +13,10 @@ export const RUTH_SERIES = [
     title: "Ruth 3 — At His Feet",
     youtube: "https://www.youtube.com/live/DM3OjHaR8I8?si=-aa9gBCaqx3Ja8Yf",
     pdf: "/resources/THEWELL_RUTH3.pdf"
+  },
+  {
+    title: "Ruth 4 — My Redeemer (The Well)",
+    pdf: "/resources/THEWELL_RUTH4.pdf",
+    youtube: "https://www.youtube.com/@thewellbiblechurch"
   }
 ];

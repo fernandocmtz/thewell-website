@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "The Well Bible Church",
   description:
     "Verse-by-verse Bible teaching, community, and events at The Well Bible Church.",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
