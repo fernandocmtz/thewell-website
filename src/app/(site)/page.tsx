@@ -62,15 +62,15 @@ export default function HomePage() {
                 {/* SECONDARY */}
                 <Link
                   href={SOCIAL.location}
-                  className="border border-white/30 text-white px-7 py-3.5 rounded-2xl font-medium backdrop-blur-md bg-white/10 hover:bg-white/20 transition-all duration-300"
-                  >
+                  className="bg-[#9c6b4f] text-white px-7 py-3.5 rounded-2xl font-medium shadow-md hover:scale-[1.03] hover:shadow-xl transition-all duration-300"
+                >
                   Get Directions
                 </Link>
 
                 {/* SECONDARY (IGUAL) */}
                 <Link
                   href="/events"
-                  className="border border-white/30 text-white px-7 py-3.5 rounded-2xl font-medium backdrop-blur-md bg-white/10 hover:bg-white/20 transition-all duration-300"
+                  className="bg-[#9c6b4f] text-white px-7 py-3.5 rounded-2xl font-medium shadow-md hover:scale-[1.03] hover:shadow-xl transition-all duration-300"
                 >
                   Upcoming Events
                 </Link>

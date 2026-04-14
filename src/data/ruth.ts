@@ -17,6 +17,6 @@ export const RUTH_SERIES = [
   {
     title: "Ruth 4 — My Redeemer (The Well)",
     pdf: "/resources/THEWELL_RUTH4.pdf",
-    youtube: "https://www.youtube.com/@thewellbiblechurch"
+    youtube: "https://www.youtube.com/watch?v=GiuQkrQ9hfs&t=6s"
   }
 ];

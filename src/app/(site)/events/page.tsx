@@ -17,11 +17,21 @@ export default function EventsPage() {
 
   const events: EventItem[] = [
     {
+      title: "Camp McAllen – Community Outdoor Fellowship",
+      date: "April 25",
+      time: "8:30 AM",
+      location: "20-Acre Park, McAllen, TX",
+      status: "upcoming",
+      image: "/events/CAMPMCALLEN.jpeg",
+    },
+
+    // 🔽 EVENTOS PASADOS
+    {
       title: "Walking Through Museum Exhibit — Psalm 119",
       date: "March 12 & 13",
       time: "6:00 PM",
       location: "At The Well",
-      status: "past", // ✅ CAMBIADO
+      status: "past",
       image: "/events/psalms119.png",
     },
     {
