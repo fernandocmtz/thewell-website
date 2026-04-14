@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { NAV, SOCIAL } from "../data/site";
 
-function Icon({ name }: { name: "youtube" | "instagram" | "chev" }) {
+function Icon({ name }: { name: "youtube" | "instagram" | "spotify" | "chev" }) {
   switch (name) {
 
     case "youtube":
@@ -22,6 +22,13 @@ function Icon({ name }: { name: "youtube" | "instagram" | "chev" }) {
           <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z" stroke="currentColor" strokeWidth="1.6"/>
           <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" strokeWidth="1.6"/>
           <path d="M17.5 6.5h.01" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+        </svg>
+      );
+
+    case "spotify":
+      return (
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.6 14.5a.8.8 0 0 1-1.1.3c-3-1.8-6.8-2.2-11.2-1.2a.8.8 0 1 1-.3-1.6c4.8-1.1 9-0.6 12.3 1.4.4.3.6.8.3 1.1Zm1.6-3.3a1 1 0 0 1-1.3.3c-3.4-2-8.6-2.6-12.6-1.3a1 1 0 1 1-.6-1.9c4.6-1.4 10.4-.7 14.3 1.6.5.3.7 1 .2 1.3Zm.2-3.4C15.3 7.7 8.9 7.5 5.4 8.7a1.2 1.2 0 1 1-.8-2.2c4.1-1.4 11.1-1.1 14.9 1.3a1.2 1.2 0 0 1-.6 2Z"/>
         </svg>
       );
 
@@ -47,7 +54,7 @@ export default function Navbar() {
   function handleClose() {
     const timer = setTimeout(() => {
       setOpenMenu(null);
-    }, 250); // delay para evitar que desaparezca rápido
+    }, 250);
 
     setCloseTimer(timer);
   }
@@ -61,32 +68,31 @@ export default function Navbar() {
 
         <div className="container-pad flex items-center gap-3 py-1 text-xs text-white">
 
-          <a
-            href={SOCIAL.youtube}
-            target="_blank"
-            className="flex items-center gap-1 opacity-80 hover:opacity-100"
-          >
+          <a href={SOCIAL.youtube} target="_blank" className="flex items-center gap-1 opacity-80 hover:opacity-100">
             <Icon name="youtube"/> YouTube
           </a>
 
+          <a href={SOCIAL.instagram} target="_blank" className="flex items-center gap-1 opacity-80 hover:opacity-100">
+            <Icon name="instagram"/> Instagram
+          </a>
+
+          {/* 🔥 NUEVO SPOTIFY */}
           <a
-            href={SOCIAL.instagram}
+            href="https://open.spotify.com/show/0Pft26iBN9frDRVV4nofGw"
             target="_blank"
             className="flex items-center gap-1 opacity-80 hover:opacity-100"
           >
-            <Icon name="instagram"/> Instagram
+            <Icon name="spotify"/> Spotify
           </a>
 
         </div>
 
       </div>
 
-
       {/* NAV */}
       <div className="container-pad flex items-center justify-between py-2 text-white">
 
         <Link href="/" className="flex items-center gap-3">
-
           <Image
             src="/images/brand/thewell-logo.png"
             alt="The Well"
@@ -98,9 +104,7 @@ export default function Navbar() {
             <div className="font-semibold text-sm">The Well</div>
             <div className="text-[11px] opacity-80">Bible Church</div>
           </div>
-
         </Link>
-
 
         <nav className="hidden md:flex items-center gap-6 font-medium text-sm">
 
@@ -134,7 +138,6 @@ export default function Navbar() {
               );
             }
 
-
             return(
               <div
                 key={item.label}
@@ -144,21 +147,12 @@ export default function Navbar() {
               >
 
                 <button className="flex items-center gap-1 px-4 py-2 rounded-full hover:bg-white/10 transition">
-
                   {item.label}
                   <Icon name="chev"/>
-
                 </button>
 
-
                 {openMenu===item.label && (
-
-                  <div
-                    className="absolute top-full left-0 mt-2 w-56 rounded-xl bg-white text-black shadow-xl py-2"
-                    onMouseEnter={()=>handleOpen(item.label)}
-                    onMouseLeave={handleClose}
-                  >
-
+                  <div className="absolute top-full left-0 mt-2 w-56 rounded-xl bg-white text-black shadow-xl py-2">
                     {item.children!.map((c:any)=>(
                       <a
                         key={c.href}
@@ -168,16 +162,13 @@ export default function Navbar() {
                         {c.label}
                       </a>
                     ))}
-
                   </div>
-
                 )}
 
               </div>
             );
 
           })}
-
 
           {/* YOUTUBE BUTTON */}
           <a
@@ -192,16 +183,16 @@ export default function Navbar() {
 
       </div>
 
-{/* MOBILE YOUTUBE CTA */}
-<div className="md:hidden absolute top-12 right-4 z-50">
-  <a
-    href={SOCIAL.youtubeSearch}
-    target="_blank"
-    className="inline-flex items-center gap-2 bg-[#C4302B] hover:bg-[#a72823] text-white px-4 py-1.5 rounded-full text-xs font-medium shadow-lg transition"
-  >
-    ▶ Watch on YouTube
-  </a>
-</div>
+      {/* MOBILE CTA */}
+      <div className="md:hidden absolute top-12 right-4 z-50">
+        <a
+          href={SOCIAL.youtubeSearch}
+          target="_blank"
+          className="inline-flex items-center gap-2 bg-[#C4302B] hover:bg-[#a72823] text-white px-4 py-1.5 rounded-full text-xs font-medium shadow-lg transition"
+        >
+          ▶ Watch on YouTube
+        </a>
+      </div>
 
     </header>
   );
