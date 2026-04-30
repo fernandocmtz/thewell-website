@@ -43,6 +43,13 @@ export default function ResourcesPage() {
 
           <div className="flex flex-wrap gap-6">
 
+            {/* PSALM 23 */}
+            <Link
+            href="/resources/adult-classes/psalm23"
+            className="bg-[#2F3E34] text-white px-6 py-3 rounded-lg hover:scale-105 transition"
+          >
+             Psalm 23
+          </Link>
             {/* PHILEMON */}
             <Link
               href="/resources/adult-classes/philemon"
