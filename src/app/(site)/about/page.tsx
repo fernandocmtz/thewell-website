@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { SOCIAL } from "@/data/site";
+import Link from "next/link"; // ✅ agregado
 
 export default function AboutPage() {
 
@@ -14,23 +15,18 @@ export default function AboutPage() {
       {/* HERO */}
       <section className="bg-[rgb(var(--sand))] py-24 relative">
 
-        <a
-  href="/"
-  className="
-    absolute top-6 left-4
-    sm:left-6
-    lg:left-1/2 lg:-translate-x-[640px]
-    flex items-center gap-2
-    text-xs sm:text-sm
-    px-3 py-1.5
-    rounded-full
-    bg-black/5 hover:bg-black/10
-    text-black/70 hover:text-black
-    transition z-20
-  "
->
-  ← Back to Home
-</a>
+        {/* ✅ NUEVO BACK BUTTON (ESTILO PRO) */}
+        <div className="absolute top-6 left-4 sm:left-6 lg:left-1/2 lg:-translate-x-[640px] z-20">
+          <Link
+            href="/"
+            className="group inline-flex items-center gap-2 text-sm font-semibold text-black/70 hover:text-black transition"
+          >
+            <span className="transition-transform duration-200 group-hover:-translate-x-1">
+              ←
+            </span>
+            Back to Home
+          </Link>
+        </div>
 
         <div className="mx-auto max-w-7xl px-6 text-center">
 
@@ -56,7 +52,6 @@ export default function AboutPage() {
 
         <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-16 items-center">
 
-          {/* TEXT */}
           <div>
 
             <h2 className="text-4xl font-bold text-gray-900">
@@ -85,8 +80,6 @@ export default function AboutPage() {
 
           </div>
 
-
-          {/* PASTOR */}
           <div className="flex justify-center">
 
             <div className="text-center">

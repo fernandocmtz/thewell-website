@@ -42,7 +42,13 @@ export default function ResourcesPage() {
           </h2>
 
           <div className="flex flex-wrap gap-6">
-
+            {/* ACTS */}
+           <Link
+            href="/resources/adult-classes/acts"
+            className="bg-[#2F3E34] text-white px-6 py-3 rounded-lg hover:scale-105 transition"
+            >
+             Acts
+         </Link>
             {/* PSALM 23 */}
             <Link
             href="/resources/adult-classes/psalm23"

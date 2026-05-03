@@ -21,7 +21,7 @@ export default function EventsPage() {
       date: "April 25",
       time: "8:30 AM",
       location: "20-Acre Park, McAllen, TX",
-      status: "upcoming",
+      status: "past", // ✅ CAMBIADO AQUÍ
       image: "/events/CAMPMCALLEN.jpeg",
     },
 
