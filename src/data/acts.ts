@@ -7,6 +7,11 @@ export const ACTS_SERIES = [
   {
     title: "Acts 1:6-11 — My Witnesses",
     youtube: "https://www.youtube.com/live/97QR5Kcu5kQ?si=k9pTVHdIELWqII62",
-    pdf: "/resources/THEWELL_ACTS1-6-11.pdf",
+    pdf: "/resources/THEWELL_ACTS1.6-11.pdf",
+  },
+  {
+    title: "Acts 1:12-26 — Decisions",
+    youtube: "https://www.youtube.com/live/2Xqd2DAX7OA?si=4nIvU3XUZGPwa2wh",
+    pdf: "/resources/THEWELL_ACTS1.12-26.pdf",
   }
 ];
