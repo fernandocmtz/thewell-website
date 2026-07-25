@@ -87,9 +87,9 @@ export default function HomePage() {
                 </div>
 
                 <div>
-                  <span className="text-white font-medium">Small Groups</span>
+                  <span className="text-white font-medium">Prayer Meeting</span>
                   <span className="mx-2 text-white/30">•</span>
-                  Weekly gatherings
+                  9:00 AM (Before Service)
                 </div>
 
               </div>

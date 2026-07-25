@@ -10,19 +10,20 @@ type EventItem = {
   location?: string;
   status: "upcoming" | "past";
   image?: string;
+  link?: string; // 👈 1. Campo para el enlace/formulario
 };
 
 export default function EventsPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const events: EventItem[] = [
+    // 🔽 EVENTO PRÓXIMO (Discipulado)
     {
-      title: "Camp McAllen – Community Outdoor Fellowship",
-      date: "April 25",
-      time: "8:30 AM",
-      location: "20-Acre Park, McAllen, TX",
-      status: "past",
-      image: "/events/CAMPMCALLEN.jpeg",
+      title: "Evaluation Book 5: Learning To Be the Church",
+      date: "July 26 – August 2",
+      location: "The Well Bible Church",
+      status: "upcoming",
+      link: "https://forms.gle/kVfwLrT5KoGCCtuN9", // 👈 2. Enlace al formulario
     },
 
     // 🔽 EVENTOS PASADOS
@@ -33,6 +34,14 @@ export default function EventsPage() {
       location: "The Well Bible Church (1325 W Minnesota Rd, Pharr, TX 78577)",
       status: "past",
       image: "/events/family-night.jpg",
+    },
+    {
+      title: "Camp McAllen – Community Outdoor Fellowship",
+      date: "April 25",
+      time: "8:30 AM",
+      location: "20-Acre Park, McAllen, TX",
+      status: "past",
+      image: "/events/CAMPMCALLEN.jpeg",
     },
     {
       title: "Walking Through Museum Exhibit — Psalm 119",
@@ -122,32 +131,51 @@ export default function EventsPage() {
           {upcoming.map((e) => (
             <div
               key={e.title}
-              className="group rounded-[2rem] border border-black/10 bg-white p-6 shadow-sm flex flex-col items-center text-center transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="group rounded-[2rem] border border-black/10 bg-white p-6 shadow-sm flex flex-col items-center text-center transition duration-300 hover:-translate-y-1 hover:shadow-xl justify-between"
             >
+              <div>
+                {e.image && (
+                  <button onClick={() => setSelectedImage(e.image!)}>
+                    <div className="aspect-[3/4] w-[220px] overflow-hidden rounded-2xl shadow-md mx-auto">
+                      <img
+                        src={e.image}
+                        alt={e.title}
+                        className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </button>
+                )}
 
-              {e.image && (
-                <button onClick={() => setSelectedImage(e.image!)}>
-                  <div className="aspect-[3/4] w-[220px] overflow-hidden rounded-2xl shadow-md mx-auto">
-                    <img
-                      src={e.image}
-                      alt={e.title}
-                      className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-                    />
+                <div className="mt-4 text-xs font-bold tracking-wide text-black/40">
+                  UPCOMING
+                </div>
+
+                <div className="mt-1 text-lg font-extrabold">
+                  {e.title}
+                </div>
+
+                <div className="mt-2 text-sm text-black/65">
+                  {e.date} {e.time ? `• ${e.time}` : ""}
+                </div>
+
+                {e.location && (
+                  <div className="mt-1 text-xs text-black/50">
+                    {e.location}
                   </div>
-                </button>
+                )}
+              </div>
+
+              {/* 👈 3. Botón para abrir el enlace/formulario de Registro */}
+              {e.link && (
+                <a
+                  href={e.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center justify-center rounded-xl bg-black px-5 py-2.5 text-sm font-semibold text-white shadow transition hover:bg-black/80"
+                >
+                  Registrarse / Register
+                </a>
               )}
-
-              <div className="mt-4 text-xs font-bold tracking-wide text-black/40">
-                UPCOMING
-              </div>
-
-              <div className="mt-1 text-lg font-extrabold">
-                {e.title}
-              </div>
-
-              <div className="mt-2 text-sm text-black/65">
-                {e.date} {e.time ? `• ${e.time}` : ""}
-              </div>
 
             </div>
           ))}

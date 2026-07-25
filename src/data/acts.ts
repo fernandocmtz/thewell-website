@@ -24,4 +24,39 @@ export const ACTS_SERIES = [
     youtube: "https://www.youtube.com/live/jVqwn9cSGC8?si=Nk64gvnWY1pe0lSw",
     pdf: "/resources/THEWELL_ACTS2.14-21.pdf",
   },
+  {
+    title: "Acts 2:22-36 — Proclaim: What Was Written (Pt.2)",
+    youtube: "https://www.youtube.com/live/-rF0f1VVIjs?si=MjjTVyDL3y9gh1i-",
+    pdf: "/resources/THEWELL_ACTS2.22-36.pdf",
+  },
+  {
+    title: "Acts 2:37-41 — Proclaim: Repentance and Faith",
+    youtube: "https://www.youtube.com/live/sF48gLZ6wTE?is=UwrrMUYMndt19FLQ",
+    pdf: "/resources/THEWELL_ACTS2.37-41.pdf",
+  },
+  {
+    title: "Acts 2:42-47 — A Church Built by Jesus",
+    youtube: "https://www.youtube.com/live/PJfCKbsstBg?is=m9QyFtCb4c_0Yitp",
+    pdf: "/resources/THEWELL_ACTS2.42-47.pdf",
+  },
+  {
+    title: "Acts 3 — By Faith In His Name",
+    youtube: "https://www.youtube.com/live/58zNvfaIVYM?is=DJLwVfeuWdXEsSAo",
+    pdf: "/resources/THEWELL_ACTS3.pdf",
+  },
+  {
+    title: "Acts 4:1-12 — The Only Name That Saves",
+    youtube: "https://www.youtube.com/live/b3lQV7P53zQ?is=RD2DN8SYEbqBcC7G",
+    pdf: "/resources/THEWELL_ACTS4.1-12.pdf",
+  },
+  {
+    title: "Acts 4:13-22 — The only Name that Saves(Cont.)",
+    youtube: "https://www.youtube.com/live/fmndSjnotog?is=cj54WJBYkybuwd8J",
+    pdf: "/resources/THEWELL_ACTS4.13-22.pdf",
+  },
+  {
+    title: "Acts 4:23-31 — The only Name that Saves(Cont.)",
+    youtube: "https://www.youtube.com/live/1gvq91VQzj4?is=Z7M8thnv_ZRhCUkr",
+    pdf: "/resources/THEWELL_ACTS4.23-31.pdf",
+  },
 ];
