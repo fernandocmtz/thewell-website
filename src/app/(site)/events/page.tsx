@@ -21,11 +21,19 @@ export default function EventsPage() {
       date: "April 25",
       time: "8:30 AM",
       location: "20-Acre Park, McAllen, TX",
-      status: "past", // ✅ CAMBIADO AQUÍ
+      status: "past",
       image: "/events/CAMPMCALLEN.jpeg",
     },
 
     // 🔽 EVENTOS PASADOS
+    {
+      title: "Family Night!",
+      date: "June 27, 2026",
+      time: "6:00 PM – 9:00 PM",
+      location: "The Well Bible Church (1325 W Minnesota Rd, Pharr, TX 78577)",
+      status: "past",
+      image: "/events/family-night.jpg",
+    },
     {
       title: "Walking Through Museum Exhibit — Psalm 119",
       date: "March 12 & 13",
