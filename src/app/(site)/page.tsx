@@ -112,7 +112,7 @@ export default function HomePage() {
                       ADULT CLASS
                     </div>
                     <div className="text-lg font-bold text-gray-900">
-                      Discipleship Learning to be a Disciple starting on Agust 30th
+                      Discipleship "Learning to be a Disciple" starting on August 30th
                     </div>
                     <p className="text-sm text-gray-600 mt-1">
                       Learning to be a disciple of Christ according to His teachings.
