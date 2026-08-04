@@ -59,4 +59,14 @@ export const ACTS_SERIES = [
     youtube: "https://www.youtube.com/live/1gvq91VQzj4?is=Z7M8thnv_ZRhCUkr",
     pdf: "/resources/THEWELL_ACTS4.23-31.pdf",
   },
+  {
+    title: "Acts 4:32-37 — The Filling of The Heart (Pt. 1)",
+    youtube: "https://www.youtube.com/live/wm61iFEgxn0?is=f8h7NMw4Nat3NJFv",
+    pdf: "/resources/THEWELL_ACTS4.32-37.pdf",
+  },
+  {
+    title: "Acts 5:1-1 — The Filling of The Heart (Pt. 2)",
+    youtube: "https://www.youtube.com/live/2xEIWofftec?is=SAH2YKk3CPdh4_2-",
+    pdf: "/resources/THEWELL_ACTS5.1-1.pdf",
+  },
 ];

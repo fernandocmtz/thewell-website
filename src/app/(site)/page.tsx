@@ -112,10 +112,10 @@ export default function HomePage() {
                       ADULT CLASS
                     </div>
                     <div className="text-lg font-bold text-gray-900">
-                      Discipleship to Healthy Finances
+                      Discipleship Learning to be a Disciple starting on Agust 30th
                     </div>
                     <p className="text-sm text-gray-600 mt-1">
-                      Learning biblical stewardship and financial wisdom.
+                      Learning to be a disciple of Christ according to His teachings.
                     </p>
                     <div className="mt-3 text-sm font-semibold text-[#2F3E34]">
                       Sundays at 10:00 AM • Before Service
