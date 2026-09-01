@@ -69,4 +69,24 @@ export const ACTS_SERIES = [
     youtube: "https://www.youtube.com/live/2xEIWofftec?is=SAH2YKk3CPdh4_2-",
     pdf: "/resources/THEWELL_ACTS5.1-1.pdf",
   },
+  {
+    title: "Acts 5:12-16 — More Than Ever",
+    youtube: "https://www.youtube.com/live/c-UXsZ1uZRQ?is=nzxECUED4SkUZEiS",
+    pdf: "/resources/THEWELL_ACTS5.12-16.pdf",
+  },
+  {
+    title: "Acts 5:17-42 — Fighting or Trusting God?",
+    youtube: "https://www.youtube.com/live/XRZeJi0vdeY?is=XtZJ-0AWL54_W8k1",
+    pdf: "/resources/THEWELL_ACTS5.17-42.pdf",
+  },
+  {
+    title: "Acts 6 — A Church of Order",
+    youtube: "https://www.youtube.com/live/jMC8jIKQ3WM?is=8AAWE9Ksy2SaTj6H",
+    pdf: "/resources/THEWELL_ACTS6-11.pdf",
+  },
+  {
+    title: "Acts 7:1-8 — Jesus In: The Promise to Abraham ",
+    youtube: "https://www.youtube.com/live/IEL3Gkrd7wA?is=xFrIZWz4XZhbxGdP",
+    pdf: "/resources/THEWELL_ACTS7.1-8.pdf",
+  },
 ];
