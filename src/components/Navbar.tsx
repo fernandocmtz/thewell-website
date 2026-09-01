@@ -176,7 +176,7 @@ export default function Navbar() {
             target="_blank"
             className="bg-[#C4302B] text-white px-4 py-2 rounded-full font-semibold hover:bg-[#a72823] transition"
           >
-            Watch on YouTube
+            YOUTUBE
           </a>
 
         </nav>
@@ -190,7 +190,7 @@ export default function Navbar() {
           target="_blank"
           className="inline-flex items-center gap-2 bg-[#C4302B] hover:bg-[#a72823] text-white px-4 py-1.5 rounded-full text-xs font-medium shadow-lg transition"
         >
-          ▶ Watch on YouTube
+          ▶ YOUTUBE
         </a>
       </div>
 
