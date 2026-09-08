@@ -1,18 +1,20 @@
 @import "tailwindcss";
 
-/* Brand tokens */
+/* Brand tokens inspirados en la iluminación y estética de The Well */
 :root {
-  /* sand / volcanic vibe */
-  --sand: 246 241 232;
-  --paper: 255 255 255;
-  --latte: 234 224 210;
+  /* Tonos crema/arena cálidos */
+  --sand: 247 244 238;   /* #F7F4EE - Fondo cálido elegante */
+  --paper: 255 255 255;  /* Blanco puro para tarjetas */
+  --latte: 238 230 216;  /* #EEE6D8 - Tono beige tenue para bordes y fondos */
 
-  --ink: 19 18 16;
-  --muted: 86 79 70;
-  --line: 34 31 26;
+  /* Tipografía y texto */
+  --ink: 24 23 20;       /* #181714 - Negro suave de alto contraste */
+  --muted: 105 98 89;    /* #696259 - Texto secundario gris cálido */
+  --line: 222 214 200;   /* Líneas divisoras sutíles */
 
-  --accent: 106 74 50;
-  --accent2: 38 87 126;
+  /* Acentos de luz dorada (iluminación del escenario) */
+  --accent: 197 146 66;  /* #C59242 - Dorado cálido */
+  --accent2: 212 163 89; /* #D4A359 - Luz ámbar */
 }
 
 /* Smooth scrolling for anchor links */
@@ -23,11 +25,14 @@ html {
 html,
 body {
   height: 100%;
+  background-color: rgb(var(--sand));
+  color: rgb(var(--ink));
 }
 
 /* Text selection */
 ::selection {
-  background: rgba(38, 87, 126, 0.18);
+  background: rgba(197, 146, 66, 0.25);
+  color: rgb(var(--ink));
 }
 
 /* Links */
@@ -44,13 +49,7 @@ a {
   padding-right: 1rem;
 }
 
-/* Optional: nicer image rendering */
 img {
   display: block;
   max-width: 100%;
-}
-
-/* Optional smoother transitions site-wide */
-* {
-  transition: background-color 0.2s ease, color 0.2s ease;
 }
