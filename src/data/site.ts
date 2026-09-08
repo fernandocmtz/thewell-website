@@ -20,11 +20,7 @@ export const NAV = [
     label: "Resources",
     href: "/resources",
     children: [
-      {
-        labe: "Weekly Resources",
-        href: "/resources"
-      },
-
+      // 👈 Se eliminó la opción vacía
       { label: "Kids Classes", href: "/resources#kids-classes" },
       { label: "Adult Classes", href: "/resources#adult-classes" },
     ],

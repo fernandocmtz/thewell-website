@@ -82,11 +82,16 @@ export const ACTS_SERIES = [
   {
     title: "Acts 6 — A Church of Order",
     youtube: "https://www.youtube.com/live/jMC8jIKQ3WM?is=8AAWE9Ksy2SaTj6H",
-    pdf: "/resources/THEWELL_ACTS6-11.pdf",
+    pdf: "/resources/THEWELL_ACTS6.pdf",
   },
   {
     title: "Acts 7:1-8 — Jesus In: The Promise to Abraham ",
     youtube: "https://www.youtube.com/live/IEL3Gkrd7wA?is=xFrIZWz4XZhbxGdP",
     pdf: "/resources/THEWELL_ACTS7.1-8.pdf",
+  },
+  {
+    title: "Acts 7:9-16 — Jesus In: The Rejected Son",
+    youtube: "https://www.youtube.com/live/Qojh3q7Vtmo?is=GKD_DVeAYt1d-c66",
+    pdf: "/resources/THEWELL_ACTS7.9-16.pdf",
   },
 ];
