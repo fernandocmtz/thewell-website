@@ -40,40 +40,40 @@ export default function AboutPage() {
       </section>
 
 
-      {/* WHO WE ARE */}
-      <section id="who-we-are" className="bg-white py-24">
+      {/* WHO WE ARE (Fondo Oscuro) */}
+      <section id="who-we-are" className="bg-zinc-950 py-24 text-white">
 
         <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-16 items-center">
 
           <div>
-            <h2 className="text-4xl font-bold text-[rgb(var(--ink))] tracking-tight">
+            <h2 className="text-4xl font-bold text-white tracking-tight">
               Who We Are
             </h2>
 
-            <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+            <p className="mt-6 text-lg text-zinc-300 leading-relaxed">
               The Well began as a small Bible study among friends, later named
-              <strong className="text-[rgb(var(--ink))]"> Well Digger Bible Book Club</strong>. What started as a simple gathering quickly grew into a weekly study meeting every Thursday at Semilla Coffee Lab.
+              <strong className="text-white"> Well Digger Bible Book Club</strong>. What started as a simple gathering quickly grew into a weekly study meeting every Thursday at Semilla Coffee Lab.
             </p>
 
-            <p className="mt-4 text-lg text-gray-600 leading-relaxed">
+            <p className="mt-4 text-lg text-zinc-300 leading-relaxed">
               As the group continued to grow, the study expanded into two weekly gatherings to accommodate those attending.
             </p>
 
-            <p className="mt-4 text-lg text-gray-600 leading-relaxed">
+            <p className="mt-4 text-lg text-zinc-300 leading-relaxed">
               Over time, that same community of believers developed into what is now
-              <strong className="text-[rgb(var(--ink))]"> The Well Bible Church</strong>—a church committed to the faithful, verse-by-verse teaching of Scripture and to growing together in Christ.
+              <strong className="text-white"> The Well Bible Church</strong>—a church committed to the faithful, verse-by-verse teaching of Scripture and to growing together in Christ.
             </p>
 
-            <p className="mt-4 text-lg text-gray-600 leading-relaxed">
+            <p className="mt-4 text-lg text-zinc-300 leading-relaxed">
               The Well Bible Church is led by a team of elders and is pastored by
-              <strong className="text-[rgb(var(--ink))]"> David Hermosillo</strong>, alongside his wife
-              <strong className="text-[rgb(var(--ink))]"> Ana</strong>, who faithfully serves and supports the Children’s and Women’s Ministries.
+              <strong className="text-white"> David Hermosillo</strong>, alongside his wife
+              <strong className="text-white"> Ana</strong>, who faithfully serves and supports the Children’s and Women’s Ministries.
             </p>
           </div>
 
           <div className="flex justify-center">
             <div className="text-center">
-              <div className="relative w-[260px] h-[260px] rounded-full overflow-hidden shadow-xl ring-4 ring-[rgb(var(--latte))]">
+              <div className="relative w-[260px] h-[260px] rounded-full overflow-hidden shadow-xl ring-4 ring-zinc-700">
                 <Image
                   src="/images/pastors/pastor-david-hermosillo.jpg"
                   alt="Pastor David Hermosillo"
@@ -83,11 +83,11 @@ export default function AboutPage() {
                 />
               </div>
 
-              <h3 className="mt-6 text-xl font-bold text-[rgb(var(--ink))]">
+              <h3 className="mt-6 text-xl font-bold text-white">
                 David Hermosillo
               </h3>
 
-              <p className="text-[rgb(var(--muted))] text-sm font-medium mt-1">
+              <p className="text-zinc-400 text-sm font-medium mt-1">
                 Lead Pastor
               </p>
             </div>
@@ -98,7 +98,7 @@ export default function AboutPage() {
       </section>
 
 
-      {/* KIDS MINISTRY */}
+      {/* KIDS MINISTRY (Sin cambios, conserva el fondo sand) */}
       <section id="kids" className="py-24 bg-[rgb(var(--sand))] border-y border-[rgb(var(--line))]">
 
         <div className="mx-auto max-w-6xl px-6 text-center">
@@ -130,16 +130,16 @@ export default function AboutPage() {
       </section>
 
 
-      {/* SMALL GROUPS */}
-      <section id="small-groups" className="bg-white py-24">
+      {/* SMALL GROUPS (Fondo Oscuro y tarjetas oscuras) */}
+      <section id="small-groups" className="bg-zinc-950 py-24 text-white">
 
         <div className="mx-auto max-w-7xl px-6">
 
-          <h2 className="text-4xl font-bold text-center text-[rgb(var(--ink))] tracking-tight">
+          <h2 className="text-4xl font-bold text-center text-white tracking-tight">
             Small Groups
           </h2>
 
-          <p className="text-center text-[rgb(var(--muted))] mt-4 max-w-2xl mx-auto">
+          <p className="text-center text-zinc-400 mt-4 max-w-2xl mx-auto">
             Small groups are where deeper discipleship and community
             happen throughout the week.
           </p>
@@ -149,7 +149,7 @@ export default function AboutPage() {
             {/* FAMILIES */}
             <div
               onClick={() => setSelectedImage("/images/small-groups/families.png")}
-              className="group cursor-pointer rounded-2xl overflow-hidden bg-[rgb(var(--sand))] shadow-sm border border-[rgb(var(--line))] hover:shadow-xl transition-all duration-300"
+              className="group cursor-pointer rounded-2xl overflow-hidden bg-zinc-900 shadow-sm border border-zinc-800 hover:shadow-xl transition-all duration-300"
             >
               <div className="relative h-[380px] bg-black">
                 <Image 
@@ -160,11 +160,11 @@ export default function AboutPage() {
                 />
               </div>
 
-              <div className="p-6 bg-white">
-                <h3 className="font-bold text-xl text-[rgb(var(--ink))]">Families Small Groups</h3>
-                <div className="mt-3 space-y-1 text-sm text-gray-600">
-                  <p><strong className="text-[rgb(var(--ink))]">#1 McAllen:</strong> Wednesdays @ 6:30 PM</p>
-                  <p><strong className="text-[rgb(var(--ink))]">#2 Pharr:</strong> Thursdays @ 6:30 PM</p>
+              <div className="p-6 bg-zinc-900 border-t border-zinc-800">
+                <h3 className="font-bold text-xl text-white">Families Small Groups</h3>
+                <div className="mt-3 space-y-1 text-sm text-zinc-300">
+                  <p><strong className="text-white">#1 McAllen:</strong> Wednesdays @ 6:30 PM</p>
+                  <p><strong className="text-white">#2 Pharr:</strong> Thursdays @ 6:30 PM</p>
                 </div>
               </div>
             </div>
@@ -172,7 +172,7 @@ export default function AboutPage() {
             {/* MEN'S */}
             <div
               onClick={() => setSelectedImage("/images/small-groups/menswomens.png")}
-              className="group cursor-pointer rounded-2xl overflow-hidden bg-[rgb(var(--sand))] shadow-sm border border-[rgb(var(--line))] hover:shadow-xl transition-all duration-300"
+              className="group cursor-pointer rounded-2xl overflow-hidden bg-zinc-900 shadow-sm border border-zinc-800 hover:shadow-xl transition-all duration-300"
             >
               <div className="relative h-[380px] bg-black">
                 <Image 
@@ -183,11 +183,11 @@ export default function AboutPage() {
                 />
               </div>
 
-              <div className="p-6 bg-white">
-                <h3 className="font-bold text-xl text-[rgb(var(--ink))]">Men's Small Groups</h3>
-                <div className="mt-3 space-y-1 text-sm text-gray-600">
-                  <p><strong className="text-[rgb(var(--ink))]">#1 McAllen (10th St):</strong> Tuesdays @ 7:00 PM</p>
-                  <p><strong className="text-[rgb(var(--ink))]">#2 McAllen (Camellia Ave):</strong> Wednesdays @ 6:30 PM</p>
+              <div className="p-6 bg-zinc-900 border-t border-zinc-800">
+                <h3 className="font-bold text-xl text-white">Men's Small Groups</h3>
+                <div className="mt-3 space-y-1 text-sm text-zinc-300">
+                  <p><strong className="text-white">#1 McAllen (10th St):</strong> Tuesdays @ 7:00 PM</p>
+                  <p><strong className="text-white">#2 McAllen (Camellia Ave):</strong> Wednesdays @ 6:30 PM</p>
                 </div>
               </div>
             </div>
