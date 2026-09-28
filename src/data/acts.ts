@@ -94,4 +94,19 @@ export const ACTS_SERIES = [
     youtube: "https://www.youtube.com/live/Qojh3q7Vtmo?is=GKD_DVeAYt1d-c66",
     pdf: "/resources/THEWELL_ACTS7.9-16.pdf",
   },
+  {
+    title: "Acts 7:17-43 — Jesus In: The Rejected Deliverer (Master)",
+    youtube: "https://www.youtube.com/live/q0xYrB24F6M?is=l959ZjKZFyGIxsmD",
+    pdf: "/resources/THEWELL_ACTS7.17-43.pdf",
+  },
+  {
+    title: "Acts 7:44-50 — Jesus In:The Tabernacle",
+    youtube: "https://www.youtube.com/live/IFo09e_SKfY?is=hVCTHEfsz2fW_T2G",
+    pdf: "/resources/Acts_7_44-50_The_Well_Formatted.pdf",
+  },
+  {
+    title: "Acts 7:51-60 — Resisting or Reflecting?",
+    youtube: "https://www.youtube.com/live/hSACnPvG7hI?is=r_BW4M6TcpUtlyTa",
+    pdf: "/resources/THEWELL_ACTS7.51-60.pdf",
+  },
 ];
