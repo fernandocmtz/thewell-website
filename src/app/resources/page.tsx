@@ -1,6 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import { KIDS_BOOKS } from "@/data/kids";
+
+const ADULT_CLASSES = [
+  { title: "Acts", href: "/resources/adult-classes/acts" },
+  { title: "Psalm 23", href: "/resources/adult-classes/psalm23" },
+  { title: "Philemon", href: "/resources/adult-classes/philemon" },
+  { title: "Ruth", href: "/resources/adult-classes/ruth" },
+  { title: "Psalm 16", href: "/resources/adult-classes/psalm16" },
+  { title: "Psalm 119", href: "/resources/adult-classes/psalm119" },
+];
 
 export default function ResourcesPage() {
   return (
@@ -9,7 +19,7 @@ export default function ResourcesPage() {
       {/* BACKGROUND */}
       <img
         src="/images/thewell-banner.jpg"
-        alt="The Well Bible Church"
+        alt=""
         className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none"
       />
 
@@ -34,62 +44,57 @@ export default function ResourcesPage() {
           Bible study notes and teaching resources.
         </p>
 
-        {/* CARD */}
+        {/* ADULT CLASSES */}
         <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-lg p-8">
-
           <h2 className="text-xl font-semibold mb-6">
             Adult Classes
           </h2>
 
           <div className="flex flex-wrap gap-6">
-            {/* ACTS */}
-           <Link
-            href="/resources/adult-classes/acts"
-            className="bg-[#2F3E34] text-white px-6 py-3 rounded-lg hover:scale-105 transition"
-            >
-             Acts
-         </Link>
-            {/* PSALM 23 */}
-            <Link
-            href="/resources/adult-classes/psalm23"
-            className="bg-[#2F3E34] text-white px-6 py-3 rounded-lg hover:scale-105 transition"
-          >
-             Psalm 23
-          </Link>
-            {/* PHILEMON */}
-            <Link
-              href="/resources/adult-classes/philemon"
-              className="bg-[#2F3E34] text-white px-6 py-3 rounded-lg hover:scale-105 transition"
-            >
-              Philemon
-            </Link>
+            {ADULT_CLASSES.map((c) => (
+              <Link
+                key={c.href}
+                href={c.href}
+                className="bg-[#2F3E34] text-white px-6 py-3 rounded-lg hover:scale-105 transition"
+              >
+                {c.title}
+              </Link>
+            ))}
+          </div>
+        </div>
 
-            {/* RUTH */}
-            <Link
-              href="/resources/adult-classes/ruth"
-              className="bg-[#2F3E34] text-white px-6 py-3 rounded-lg hover:scale-105 transition"
-            >
-              Ruth
-            </Link>
+        {/* KIDS */}
+        <div className="mt-10 bg-white/95 backdrop-blur-xl rounded-3xl shadow-lg p-8">
+          <div className="flex flex-wrap items-end justify-between gap-4 mb-6">
+            <div>
+              <h2 className="text-xl font-semibold">
+                Kids
+              </h2>
+              <p className="text-gray-600 mt-1">
+                Sunday lessons for parents to read with their kids at home.
+              </p>
+            </div>
 
-            {/* PSALM 16 */}
             <Link
-              href="/resources/adult-classes/psalm16"
-              className="bg-[#2F3E34] text-white px-6 py-3 rounded-lg hover:scale-105 transition"
+              href="/resources/kids"
+              className="text-sm font-semibold text-[#2F3E34] underline underline-offset-4 hover:text-black transition"
             >
-              Psalm 16
+              See all kids lessons
             </Link>
-
-            {/* PSALM 119 */}
-            <Link
-              href="/resources/adult-classes/psalm119"
-              className="bg-[#2F3E34] text-white px-6 py-3 rounded-lg hover:scale-105 transition"
-            >
-              Psalm 119
-            </Link>
-
           </div>
 
+          <div className="flex flex-wrap gap-6">
+            {KIDS_BOOKS.map((b) => (
+              <Link
+                key={b.slug}
+                href={`/resources/kids#${b.slug}`}
+                className="text-white px-6 py-3 rounded-lg hover:scale-105 transition"
+                style={{ backgroundColor: b.color }}
+              >
+                {b.book}
+              </Link>
+            ))}
+          </div>
         </div>
 
       </div>
