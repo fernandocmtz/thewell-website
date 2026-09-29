@@ -37,10 +37,9 @@ export default function KidsResourcesPage() {
               conversation going during the week.
             </p>
 
-            {/* Jump to a book */}
             <nav aria-label="Books" className="mt-8 flex flex-wrap gap-3">
               {books.map((b) => (
-                <a
+                <Link
                   key={b.slug}
                   href={`#${b.slug}`}
                   className="rounded-full px-5 py-2 text-sm font-semibold text-white shadow-md transition hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
@@ -48,7 +47,7 @@ export default function KidsResourcesPage() {
                 >
                   {b.book}
                   <span className="ml-2 text-white/70">{b.lessons.length}</span>
-                </a>
+                </Link>
               ))}
             </nav>
           </div>
@@ -104,7 +103,7 @@ export default function KidsResourcesPage() {
                 <ol className="divide-y divide-black/5 px-4 py-2 md:px-6">
                   {b.lessons.map((lesson) => (
                     <li
-                      key={lesson.href}
+                      key={`${lesson.number}-${lesson.title}`}
                       className="flex flex-wrap items-center gap-4 py-4"
                     >
                       <span
@@ -118,14 +117,33 @@ export default function KidsResourcesPage() {
                         {lesson.title}
                       </div>
 
-                      <a
-                        href={lesson.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="rounded-lg bg-[#2F3E34] px-5 py-2.5 text-sm font-medium text-white transition hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2F3E34]"
-                      >
-                        Open lesson
-                      </a>
+                      {lesson.href ? (
+                        // Single file: one "Open lesson" button
+                        <a
+                          href={lesson.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="rounded-lg bg-[#2F3E34] px-5 py-2.5 text-sm font-medium text-white transition hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2F3E34]"
+                        >
+                          Open lesson
+                        </a>
+                      ) : (
+                        // Folder with several files: one button per file
+                        <div className="flex w-full flex-wrap gap-2 pl-14 md:w-auto md:pl-0">
+                          {lesson.files?.map((f) => (
+                            <a
+                              key={f.href}
+                              href={f.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="rounded-lg border px-4 py-2 text-sm font-medium transition hover:bg-black/5"
+                              style={{ borderColor: b.color, color: b.color }}
+                            >
+                              {f.title}
+                            </a>
+                          ))}
+                        </div>
+                      )}
                     </li>
                   ))}
                 </ol>
