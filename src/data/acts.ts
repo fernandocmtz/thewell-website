@@ -109,4 +109,9 @@ export const ACTS_SERIES = [
     youtube: "https://www.youtube.com/live/hSACnPvG7hI?is=r_BW4M6TcpUtlyTa",
     pdf: "/resources/THEWELL_ACTS7.51-60.pdf",
   },
+  {
+    title: "Acts 8:1-8 — Great Persecution, Great Lamentation, Great Joy",
+    youtube: "https://www.youtube.com/live/CJLA7qKshr0?is=B1VKgdh8uaQiqXwk",
+    pdf: "/resources/THEWELL_ACTS8.1-8.pdf",
+  },
 ];
