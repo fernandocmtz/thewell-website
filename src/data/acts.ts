@@ -114,4 +114,24 @@ export const ACTS_SERIES = [
     youtube: "https://www.youtube.com/live/CJLA7qKshr0?is=B1VKgdh8uaQiqXwk",
     pdf: "/resources/THEWELL_ACTS8.1-8.pdf",
   },
+  {
+    title: "Acts 8:9-25 — Seeking The Gifts or The Giver?",
+    youtube: "https://www.youtube.com/live/vrlmNuQEzPg?si=TJAinFgp95TEnCuj",
+    pdf: "/resources/THEWELL_ACTS8.9-25.pdf",
+  },
+  {
+    title: "Acts 8:26-40 — Do You Understand What You Are Reading?",
+    youtube: "https://www.youtube.com/live/ZRs49WhRPvc?si=exDb7vxWZjEnhVd9",
+    pdf: "/resources/THEWELL_ACTS8.26-40.pdf",
+  },
+  {
+    title: "Acts 9:1-19 — The Revelation and the Responsibility",
+    youtube: "https://www.youtube.com/live/QVz7nOapTTc?si=sey_FPTLMvD2o5A1",
+    pdf: "/resources/THEWELL_ACTS9.1-19.pdf",
+  },
+  {
+    title: "Acts 9:20-25 — Keep Increasing In Strength",
+    youtube: "https://www.youtube.com/live/fuP9xGDDEqA?si=cJFlfnRocmI665GR",
+    pdf: "/resources/THEWELL_ACTS9.20-25.pdf",
+  },
 ];
