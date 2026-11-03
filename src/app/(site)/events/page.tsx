@@ -10,23 +10,22 @@ type EventItem = {
   location?: string;
   status: "upcoming" | "past";
   image?: string;
-  link?: string; // 👈 1. Campo para el enlace/formulario
+  link?: string; // Enlace/formulario opcional para eventos próximos
 };
 
 export default function EventsPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const events: EventItem[] = [
-    // 🔽 EVENTO PRÓXIMO (Discipulado)
-    {
-      title: "Evaluation Book 5: Learning To Be the Church",
-      date: "July 26 – August 2",
-      location: "The Well Bible Church",
-      status: "upcoming",
-      link: "https://forms.gle/kVfwLrT5KoGCCtuN9", // 👈 2. Enlace al formulario
-    },
-
     // 🔽 EVENTOS PASADOS
+    {
+      title: "Trivia Night — Bible Trivia",
+      date: "October 23, 2026",
+      time: "7:00 PM – 9:00 PM",
+      location: "The Well Bible Church",
+      status: "past",
+      image: "/events/bible-trivia-night.png",
+    },
     {
       title: "Family Night!",
       date: "June 27, 2026",
@@ -165,7 +164,6 @@ export default function EventsPage() {
                 )}
               </div>
 
-              {/* 👈 3. Botón para abrir el enlace/formulario de Registro */}
               {e.link && (
                 <a
                   href={e.link}
